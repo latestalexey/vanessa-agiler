@@ -64,7 +64,7 @@
 		<Metadata name="Catalog.Персоны.Help" id="32acdd73-a065-48f2-8d73-f61fb97bd579.1" configVersion="229cd5bf8e36e9428d7a204c4a6da52c00000000"/>
 		<Metadata name="Catalog.Персоны.ManagerModule" id="32acdd73-a065-48f2-8d73-f61fb97bd579.3" configVersion="517fba16bead2641bb5a1725e402b6e100000000"/>
 		<Metadata name="Catalog.Персоны.ObjectModule" id="32acdd73-a065-48f2-8d73-f61fb97bd579.0" configVersion="0e32cc16485c5c4ab7d4dc8f29e5e4b100000000"/>
-		<Metadata name="Catalog.ПользовательскиеИстории" id="4606d4d1-dce8-4220-9c9c-14b711604e7c" configVersion="b5e5c38bfbd23349a6e12546dce12eae00000000">
+		<Metadata name="Catalog.ПользовательскиеИстории" id="4606d4d1-dce8-4220-9c9c-14b711604e7c" configVersion="bb9484b8d85e284d98ff3ededa35434e00000000">
 			<Metadata name="Catalog.ПользовательскиеИстории.Command.Синхронизировать" id="01749d25-053b-470e-9714-673733cc6b1a"/>
 			<Metadata name="Catalog.ПользовательскиеИстории.Attribute.ПутьКФиче" id="0de17c9e-e06d-4ea1-aa61-066c8af83728"/>
 			<Metadata name="Catalog.ПользовательскиеИстории.Attribute.Ценность" id="24f11329-bb44-4aa5-b794-50d98579fce8"/>
@@ -95,7 +95,7 @@
 		<Metadata name="Catalog.ПользовательскиеИстории.Form.ФормаЭлемента.Form" id="eabc71a9-d8f7-407c-a1d9-81f908e83be8.0" configVersion="76dd1b8d954be54cb79335f8c35fe7a900000000"/>
 		<Metadata name="Catalog.ПользовательскиеИстории.Help" id="4606d4d1-dce8-4220-9c9c-14b711604e7c.1" configVersion="20f5bab0a90b254c91424bdf4cb8c10600000000"/>
 		<Metadata name="Catalog.ПользовательскиеИстории.ManagerModule" id="4606d4d1-dce8-4220-9c9c-14b711604e7c.3" configVersion="b5b0729c21321b4489c1bf6779da7c3c00000000"/>
-		<Metadata name="Catalog.ПользовательскиеИстории.ObjectModule" id="4606d4d1-dce8-4220-9c9c-14b711604e7c.0" configVersion="d5afc806492ccb4b9817da62c71d3c8500000000"/>
+		<Metadata name="Catalog.ПользовательскиеИстории.ObjectModule" id="4606d4d1-dce8-4220-9c9c-14b711604e7c.0" configVersion="a42fdab45914bb48ac85b15c915a003900000000"/>
 		<Metadata name="Catalog.Продукты" id="97bed243-ca42-4110-b713-e1374243641b" configVersion="704f9205ec7afb43bbdd221fb585559700000000"/>
 		<Metadata name="Catalog.Проекты" id="c332f2ce-d77c-4e54-9ab2-6fa6c0399678" configVersion="cbbf1d812c67c64bad6a81b8dff05b1400000000">
 			<Metadata name="Catalog.Проекты.Attribute.РасширенноеОписание" id="22a2b694-cf3b-4dbe-81a5-faf581b72e32"/>
