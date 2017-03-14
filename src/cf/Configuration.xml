@@ -146,15 +146,16 @@
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ПомощникВызоваСервисов</CommonModule>
 			<CommonForm>ФормаКонстант</CommonForm>
-			<Catalog>Проекты</Catalog>
+			<Catalog>Процессы</Catalog>
 			<Catalog>БизнесЦели</Catalog>
+			<Catalog>Проекты</Catalog>
 			<Catalog>ПользовательскиеИстории</Catalog>
-			<Catalog>Персоны</Catalog>
 			<Catalog>Функциональности</Catalog>
-			<Catalog>КлючевыеДействия</Catalog>
+			<Catalog>Персоны</Catalog>
 			<Catalog>Метрики</Catalog>
 			<Catalog>Продукты</Catalog>
 			<Catalog>Контакты</Catalog>
+			<Catalog>КлючевыеДействия</Catalog>
 			<Document>ПланированиеПроекта</Document>
 			<Document>Ретроспектива</Document>
 			<Document>ОпросSAFe</Document>
@@ -163,6 +164,7 @@
 			<Enum>РежимыОбъединения</Enum>
 			<Enum>ФормаУчастияВПроекте</Enum>
 			<Enum>СистемыPMO</Enum>
+			<Enum>ЭлементыПроцесса</Enum>
 			<DataProcessor>МастерПланированияПроекта</DataProcessor>
 			<DataProcessor>ПланИтерацийПроектов</DataProcessor>
 			<DataProcessor>ИнтеграторPMOСистем</DataProcessor>

@@ -20,6 +20,11 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланированиеПроекта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МастерПланированияПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Процессы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПользовательскиеИстории</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Персоны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлючевыеДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Функциональности</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
