@@ -125,6 +125,8 @@
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<ContextMenu name="ПользовательскаяИсторияКонтекстноеМеню" id="57"/>
 					<ExtendedTooltip name="ПользовательскаяИсторияРасширеннаяПодсказка" id="58"/>
 					<Events>
@@ -178,12 +180,12 @@
 							<ContextMenu name="Представление3КонтекстноеМеню" id="49"/>
 							<ExtendedTooltip name="Представление3РасширеннаяПодсказка" id="50"/>
 						</InputField>
-						<Button name="ЗаполнитьПерсоной" id="54">
+						<Button name="ЗаполнитьИзПерсоны" id="54">
 							<Type>UsualButton</Type>
 							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-							<CommandName>Form.Command.ЗаполнитьПерсоной</CommandName>
+							<CommandName>Form.Command.ЗаполнитьИзПерсоны</CommandName>
 							<ShapeRepresentation>None</ShapeRepresentation>
-							<ExtendedTooltip name="ЗаполнитьПерсонойРасширеннаяПодсказка" id="55"/>
+							<ExtendedTooltip name="ЗаполнитьИзПерсоныРасширеннаяПодсказка" id="55"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -236,25 +238,47 @@
 					<v8:content>Слой старт</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_ВложенныйПроцессРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
-				<InputField name="Представление4" id="51">
-					<DataPath>Объект.Представление</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Описание</v8:content>
-						</v8:item>
-					</Title>
-					<TitleLocation>Left</TitleLocation>
+				<InputField name="ВложенныйПроцесс" id="63">
+					<DataPath>Объект.ВложенныйПроцесс</DataPath>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="Представление4КонтекстноеМеню" id="52"/>
-					<ExtendedTooltip name="Представление4РасширеннаяПодсказка" id="53"/>
+					<ContextMenu name="ВложенныйПроцессКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ВложенныйПроцессРасширеннаяПодсказка" id="65"/>
 				</InputField>
+				<UsualGroup name="Группа3" id="66">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<InputField name="Представление4" id="51">
+							<DataPath>Объект.Представление</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="Представление4КонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="Представление4РасширеннаяПодсказка" id="53"/>
+						</InputField>
+						<Button name="ЗаполнитьИзВложенногоПроцесса" id="68">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьИзВложенногоПроцесса</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="ЗаполнитьИзВложенногоПроцессаРасширеннаяПодсказка" id="69"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Слой_Комментарий" id="13">
@@ -302,17 +326,17 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ЗаполнитьПерсоной" id="1">
+		<Command name="ЗаполнитьИзПерсоны" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить персоной</v8:content>
+					<v8:content>Заполнить из персоны</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить персоной</v8:content>
+					<v8:content>Заполнить из персоны</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -320,6 +344,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗаполнитьПерсоной</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗаполнитьИзВложенногоПроцесса" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из вложенного процесса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из вложенного процесса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьИз</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаполнитьИзВложенногоПроцесса</Action>
 			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
