@@ -148,16 +148,16 @@
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ПомощникВызоваСервисов</CommonModule>
 			<CommonForm>ФормаКонстант</CommonForm>
-			<Catalog>Процессы</Catalog>
 			<Catalog>БизнесЦели</Catalog>
-			<Catalog>Проекты</Catalog>
-			<Catalog>ПользовательскиеИстории</Catalog>
-			<Catalog>Функциональности</Catalog>
-			<Catalog>Персоны</Catalog>
-			<Catalog>Метрики</Catalog>
-			<Catalog>Продукты</Catalog>
-			<Catalog>Контакты</Catalog>
 			<Catalog>КлючевыеДействия</Catalog>
+			<Catalog>Контакты</Catalog>
+			<Catalog>Метрики</Catalog>
+			<Catalog>Персоны</Catalog>
+			<Catalog>ПользовательскиеИстории</Catalog>
+			<Catalog>Продукты</Catalog>
+			<Catalog>Проекты</Catalog>
+			<Catalog>Процессы</Catalog>
+			<Catalog>Функциональности</Catalog>
 			<Document>ПланированиеПроекта</Document>
 			<Document>Ретроспектива</Document>
 			<Document>ОпросSAFe</Document>
