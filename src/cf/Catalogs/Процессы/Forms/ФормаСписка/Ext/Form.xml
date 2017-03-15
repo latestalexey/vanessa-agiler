@@ -57,6 +57,22 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<ButtonGroup name="ФормаГруппа2" id="43">
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа2РасширеннаяПодсказка" id="44"/>
+				<ChildItems>
+					<Button name="ФормаПереместитьВверх" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереместитьВверх</CommandName>
+						<ExtendedTooltip name="ФормаПереместитьВверхРасширеннаяПодсказка" id="46"/>
+					</Button>
+					<Button name="ФормаПереместитьВниз" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереместитьВниз</CommandName>
+						<ExtendedTooltip name="ФормаПереместитьВнизРасширеннаяПодсказка" id="48"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
 			<Button name="ФормаСкрытьРодителей" id="26">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СкрытьРодителей</CommandName>
@@ -164,6 +180,7 @@
 				<Field>Список.Картинка</Field>
 				<Field>Список.Ref</Field>
 				<Field>Список.Parent</Field>
+				<Field>Список.Code</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -281,7 +298,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">web:LightSlateBlue</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -301,7 +318,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:LightSalmon</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -471,6 +488,46 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Создать_Комментарий</Action>
+		</Command>
+		<Command name="ПереместитьВверх" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьВверх</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПереместитьВниз" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вниз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьВниз</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
 	<CommandInterface>
