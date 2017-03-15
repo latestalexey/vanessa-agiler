@@ -137,6 +137,7 @@
 			<CommonPicture>ОператорыПолнотекстовогоПоиска</CommonPicture>
 			<CommonPicture>Интеграция</CommonPicture>
 			<CommonPicture>Процесс</CommonPicture>
+			<CommonPicture>ЗаполнитьИз</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<Role>ПравоЗапуска</Role>
 			<Role>ПравоПланирования</Role>

@@ -26,14 +26,20 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_СтартРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
-				<InputField name="Наименование" id="15">
-					<DataPath>Объект.Description</DataPath>
+				<InputField name="Представление2" id="45">
+					<DataPath>Объект.Представление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Left</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<MultiLine>true</MultiLine>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="17"/>
+					<ContextMenu name="Представление2КонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="Представление2РасширеннаяПодсказка" id="47"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -56,6 +62,12 @@
 			<ChildItems>
 				<InputField name="Комментарий" id="18">
 					<DataPath>Объект.Представление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Left</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
@@ -97,6 +109,13 @@
 					<ContextMenu name="КлючевоеДействиеКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="КлючевоеДействиеРасширеннаяПодсказка" id="26"/>
 				</InputField>
+				<LabelField name="ПользовательскаяИстория" id="56">
+					<DataPath>Объект.ПользовательскаяИстория</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ПользовательскаяИсторияКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПользовательскаяИсторияРасширеннаяПодсказка" id="58"/>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Слой_Условие" id="7">
@@ -112,6 +131,7 @@
 					<v8:content>Слой старт</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_УсловиеРасширеннаяПодсказка" id="8"/>
@@ -123,6 +143,35 @@
 					<ContextMenu name="ПерсонаКонтекстноеМеню" id="40"/>
 					<ExtendedTooltip name="ПерсонаРасширеннаяПодсказка" id="41"/>
 				</InputField>
+				<UsualGroup name="Группа1" id="59">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<InputField name="Представление3" id="48">
+							<DataPath>Объект.Представление</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="Представление3КонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="Представление3РасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<Button name="ЗаполнитьПерсоной" id="54">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.ЗаполнитьПерсоной</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="ЗаполнитьПерсонойРасширеннаяПодсказка" id="55"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Слой_ВариантУсловия" id="9">
@@ -176,14 +225,20 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_ВложенныйПроцессРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
-				<InputField name="Наименование1" id="33">
-					<DataPath>Объект.Description</DataPath>
+				<InputField name="Представление4" id="51">
+					<DataPath>Объект.Представление</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Left</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<MultiLine>true</MultiLine>
-					<ContextMenu name="Наименование1КонтекстноеМеню" id="34"/>
-					<ExtendedTooltip name="Наименование1РасширеннаяПодсказка" id="35"/>
+					<ContextMenu name="Представление4КонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="Представление4РасширеннаяПодсказка" id="53"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -242,4 +297,26 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПерсоной" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить персоной</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить персоной</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьИз</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаполнитьПерсоной</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
 </Form>
