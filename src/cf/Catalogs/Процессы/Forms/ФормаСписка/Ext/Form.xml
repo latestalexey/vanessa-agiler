@@ -96,6 +96,11 @@
 				<xr:Ref>CommonPicture.Процесс</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -106,7 +111,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
+			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
@@ -187,7 +192,8 @@
 			ТОГДА 5
 		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Комментарий)
 			ТОГДА 6
-	КОНЕЦ КАК Картинка
+	КОНЕЦ КАК Картинка,
+	СправочникПроцессы.Код
 ИЗ
 	Справочник.Процессы КАК СправочникПроцессы</QueryText>
 				<MainTable>Catalog.Процессы</MainTable>
@@ -197,6 +203,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
