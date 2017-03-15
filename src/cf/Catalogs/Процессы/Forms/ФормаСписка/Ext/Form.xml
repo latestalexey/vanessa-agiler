@@ -92,7 +92,11 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>Список.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.Процесс</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -103,7 +107,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>false</ShowRoot>
+			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
@@ -160,11 +164,36 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
+				<Field>Список.Картинка</Field>
 				<Field>Список.Ref</Field>
+				<Field>Список.Parent</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПроцессы.Ссылка,
+	СправочникПроцессы.Родитель,
+	СправочникПроцессы.ЭлементПроцесса,
+	СправочникПроцессы.Представление,
+	ВЫБОР
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Старт)
+			ТОГДА 0
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Завершение)
+			ТОГДА 1
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.ПользовательскаяИстория)
+			ТОГДА 2
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Условие)
+			ТОГДА 3
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.ВариантУсловия)
+			ТОГДА 4
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.ВложенныйПроцесс)
+			ТОГДА 5
+		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Комментарий)
+			ТОГДА 6
+	КОНЕЦ КАК Картинка
+ИЗ
+	Справочник.Процессы КАК СправочникПроцессы</QueryText>
 				<MainTable>Catalog.Процессы</MainTable>
 				<ListSettings>
 					<dcsset:filter>
