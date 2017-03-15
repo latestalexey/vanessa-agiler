@@ -112,8 +112,8 @@
 			<Metadata name="Catalog.Процессы.Attribute.Персона" id="6566073e-043e-4d90-8fb3-2179ff9b818a"/>
 			<Metadata name="Catalog.Процессы.Attribute.ЭлементПроцесса" id="6e46bd11-3dc9-4a90-a9fd-b3dba7ac4fca"/>
 		</Metadata>
-		<Metadata name="Catalog.Процессы.Form.ФормаСписка" id="0c40182f-e70a-47aa-9d4a-f8c164a859bc" configVersion="4f936d53507a1a4eba80428f35f32ece00000000"/>
-		<Metadata name="Catalog.Процессы.Form.ФормаСписка.Form" id="0c40182f-e70a-47aa-9d4a-f8c164a859bc.0" configVersion="fd3787e240532e4aa11b19bb1342218a00000000"/>
+		<Metadata name="Catalog.Процессы.Form.ФормаСписка" id="0c40182f-e70a-47aa-9d4a-f8c164a859bc" configVersion="3e424039cdc27f47b3f8834c628a7fa000000000"/>
+		<Metadata name="Catalog.Процессы.Form.ФормаСписка.Form" id="0c40182f-e70a-47aa-9d4a-f8c164a859bc.0" configVersion="f3a436d452851943beb153481a1e1a7f00000000"/>
 		<Metadata name="Catalog.Процессы.Form.ФормаЭлемента" id="feb78f73-9c31-41b9-b542-f54090ddea2f" configVersion="be7299d42537474d886cd55270ad432e00000000"/>
 		<Metadata name="Catalog.Процессы.Form.ФормаЭлемента.Form" id="feb78f73-9c31-41b9-b542-f54090ddea2f.0" configVersion="9739f3e33da9ad4a86e73f9d7e142bc100000000"/>
 		<Metadata name="Catalog.Процессы.ObjectModule" id="aadbcf3d-899b-4945-8dc0-da4755087869.0" configVersion="b3fc5ab4de58144aaef6c61e486ea53300000000"/>
