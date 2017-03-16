@@ -16,3 +16,4 @@ sonarlint.json
 
 tools/*.txt
 tools/build
+out/
