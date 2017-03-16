@@ -177,6 +177,7 @@
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
 				<Field>Список.ЭлементПроцесса</Field>
+				<Field>Список.ПользовательскаяИстория</Field>
 				<Field>Список.Картинка</Field>
 				<Field>Список.Ref</Field>
 				<Field>Список.Parent</Field>
@@ -206,7 +207,8 @@
 		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Комментарий)
 			ТОГДА 6
 	КОНЕЦ КАК Картинка,
-	СправочникПроцессы.Код
+	СправочникПроцессы.Код,
+	СправочникПроцессы.ПользовательскаяИстория
 ИЗ
 	Справочник.Процессы КАК СправочникПроцессы</QueryText>
 				<MainTable>Catalog.Процессы</MainTable>
@@ -247,12 +249,7 @@
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.Старт</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
+				<dcsset:appearance/>
 			</dcsset:item>
 			<dcsset:item>
 				<dcsset:selection>
@@ -268,16 +265,6 @@
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:Gainsboro</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
-					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Шрифт</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
@@ -298,12 +285,7 @@
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.Условие</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:LightSlateBlue</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
+				<dcsset:appearance/>
 			</dcsset:item>
 			<dcsset:item>
 				<dcsset:use>false</dcsset:use>
@@ -319,12 +301,7 @@
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.ВариантУсловия</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
+				<dcsset:appearance/>
 			</dcsset:item>
 			<dcsset:item>
 				<dcsset:use>false</dcsset:use>
@@ -340,16 +317,7 @@
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.Завершение</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:SlateGray</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
+				<dcsset:appearance/>
 			</dcsset:item>
 			<dcsset:item>
 				<dcsset:use>false</dcsset:use>
@@ -365,10 +333,33 @@
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.ВложенныйПроцесс</dcsset:right>
 					</dcsset:item>
 				</dcsset:filter>
+				<dcsset:appearance/>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Список.ЭлементПроцесса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.ПользовательскаяИстория</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Список.ПользовательскаяИстория</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ПользовательскиеИстории.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>

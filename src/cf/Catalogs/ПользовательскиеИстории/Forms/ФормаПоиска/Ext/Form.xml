@@ -1,21 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Width>70</Width>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ФормаВыполнитьПоиск" id="27">
-				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ВыполнитьПоиск</CommandName>
-				<ExtendedTooltip name="ФормаВыполнитьПоискРасширеннаяПодсказка" id="28"/>
-			</Button>
-			<Button name="ФормаСоздатьНеНайденныйОбъектИнфобазы" id="40">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СоздатьНеНайденныйОбъектИнфобазы</CommandName>
-				<ExtendedTooltip name="ФормаСоздатьНеНайденныйОбъектИнфобазыРасширеннаяПодсказка" id="41"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -28,6 +16,7 @@
 			<ChildItems>
 				<InputField name="СтрокаПоиска" id="1">
 					<DataPath>СтрокаПоиска</DataPath>
+					<TitleLocation>Top</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="2"/>
@@ -50,6 +39,11 @@
 						<Event name="Tuning">ЧеткостьПоискаРегулирование</Event>
 					</Events>
 				</InputField>
+				<Button name="ВыполнитьПоиск" id="42">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьПоиск</CommandName>
+					<ExtendedTooltip name="ВыполнитьПоискРасширеннаяПодсказка" id="43"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="29">
@@ -68,12 +62,16 @@
 				<InputField name="ИмяСправочника" id="37">
 					<DataPath>ИмяСправочника</DataPath>
 					<Enabled>false</Enabled>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<ContextMenu name="ИмяСправочникаКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ИмяСправочникаРасширеннаяПодсказка" id="39"/>
 				</InputField>
 				<InputField name="СинонимПоляПоиска" id="34">
 					<DataPath>СинонимПоляПоиска</DataPath>
 					<Enabled>false</Enabled>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
 					<ContextMenu name="СинонимПоляПоискаКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="СинонимПоляПоискаРасширеннаяПодсказка" id="36"/>
 				</InputField>
@@ -130,6 +128,11 @@
 				</InputField>
 			</ChildItems>
 		</Table>
+		<Button name="СоздатьНеНайденныйОбъектИнфобазы" id="44">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СоздатьНеНайденныйОбъектИнфобазы</CommandName>
+			<ExtendedTooltip name="СоздатьНеНайденныйОбъектИнфобазыРасширеннаяПодсказка" id="45"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="СтрокаПоиска" id="1">
@@ -246,7 +249,12 @@
 					<v8:content>Выполнить поиск</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Find</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ВыполнитьПоиск</Action>
+			<Representation>Picture</Representation>
 		</Command>
 		<Command name="СоздатьНеНайденныйОбъектИнфобазы" id="2">
 			<Title>

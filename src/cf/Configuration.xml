@@ -148,6 +148,7 @@
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ПомощникВызоваСервисов</CommonModule>
 			<CommonForm>ФормаКонстант</CommonForm>
+			<CommonForm>ФормаПоиска</CommonForm>
 			<Catalog>БизнесЦели</Catalog>
 			<Catalog>КлючевыеДействия</Catalog>
 			<Catalog>Контакты</Catalog>

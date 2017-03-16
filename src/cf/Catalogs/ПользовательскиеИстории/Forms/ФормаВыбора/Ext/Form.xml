@@ -83,7 +83,7 @@
 							<ExtendedTooltip name="КлючевоеДействиеРасширеннаяПодсказка" id="30"/>
 						</LabelField>
 						<LabelField name="НеобходимыйФункционал" id="25">
-							<DataPath>Список.НеобходимыйФункционал</DataPath>
+							<DataPath>~Список.НеобходимыйФункционал</DataPath>
 							<ContextMenu name="НеобходимыйФункционалКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="НеобходимыйФункционалРасширеннаяПодсказка" id="27"/>
 						</LabelField>

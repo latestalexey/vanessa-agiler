@@ -103,7 +103,7 @@
 							<ExtendedTooltip name="ПерсонаРасширеннаяПодсказка" id="59"/>
 						</LabelField>
 						<LabelField name="НеобходимыйФункционал" id="28">
-							<DataPath>Список.НеобходимыйФункционал</DataPath>
+							<DataPath>~Список.НеобходимыйФункционал</DataPath>
 							<AutoCellHeight>true</AutoCellHeight>
 							<ContextMenu name="НеобходимыйФункционалКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="НеобходимыйФункционалРасширеннаяПодсказка" id="30"/>
