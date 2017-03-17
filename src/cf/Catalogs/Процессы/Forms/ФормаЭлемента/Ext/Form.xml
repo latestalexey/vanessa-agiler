@@ -53,13 +53,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_СтартРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
-				<InputField name="БизнесЦель" id="92">
-					<TitleLocation>Top</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<ContextMenu name="БизнесЦельКонтекстноеМеню" id="93"/>
-					<ExtendedTooltip name="БизнесЦельРасширеннаяПодсказка" id="94"/>
-				</InputField>
 				<InputField name="Описание2" id="45">
 					<DataPath>Объект.Описание</DataPath>
 					<Title>
@@ -144,34 +137,6 @@
 						<Event name="OnClick">HTMLПредставлениеПриНажатии</Event>
 					</Events>
 				</HTMLDocumentField>
-				<UsualGroup name="Группа3" id="90">
-					<Group>Horizontal</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="91"/>
-					<ChildItems>
-						<InputField name="ПользовательскаяИстория" id="83">
-							<DataPath>Объект.ПользовательскаяИстория</DataPath>
-							<TitleLocation>Top</TitleLocation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<DropListButton>false</DropListButton>
-							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-							<ContextMenu name="ПользовательскаяИсторияКонтекстноеМеню" id="84"/>
-							<ExtendedTooltip name="ПользовательскаяИсторияРасширеннаяПодсказка" id="85"/>
-							<Events>
-								<Event name="StartChoice">ПользовательскаяИсторияНачалоВыбора</Event>
-								<Event name="Opening">ПользовательскаяИсторияОткрытие</Event>
-							</Events>
-						</InputField>
-						<Button name="ЗаполнитьИзПользовательскойИстории" id="86">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗаполнитьИзПользовательскойИстории</CommandName>
-							<ShapeRepresentation>None</ShapeRepresentation>
-							<ExtendedTooltip name="ЗаполнитьИзПользовательскойИсторииРасширеннаяПодсказка" id="87"/>
-						</Button>
-					</ChildItems>
-				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Слой_Условие" id="7">
@@ -263,13 +228,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Слой_ВложенныйПроцессРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
-				<InputField name="БизнесЦель1" id="95">
-					<TitleLocation>Top</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<ContextMenu name="БизнесЦель1КонтекстноеМеню" id="96"/>
-					<ExtendedTooltip name="БизнесЦель1РасширеннаяПодсказка" id="97"/>
-				</InputField>
 				<InputField name="ВложенныйПроцесс" id="63">
 					<DataPath>Объект.ВложенныйПроцесс</DataPath>
 					<TitleLocation>Top</TitleLocation>

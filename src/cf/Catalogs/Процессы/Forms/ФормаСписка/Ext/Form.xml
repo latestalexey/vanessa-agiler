@@ -184,11 +184,11 @@
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
 				<Field>Список.ЭлементПроцесса</Field>
-				<Field>Список.ПользовательскаяИстория</Field>
 				<Field>Список.Картинка</Field>
 				<Field>Список.Ref</Field>
 				<Field>Список.Parent</Field>
 				<Field>Список.Code</Field>
+				<Field>1/15</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -214,8 +214,7 @@
 		КОГДА СправочникПроцессы.ЭлементПроцесса = ЗНАЧЕНИЕ(Перечисление.ЭлементыПроцесса.Комментарий)
 			ТОГДА 6
 	КОНЕЦ КАК Картинка,
-	СправочникПроцессы.Код,
-	СправочникПроцессы.ПользовательскаяИстория
+	СправочникПроцессы.Код
 ИЗ
 	Справочник.Процессы КАК СправочникПроцессы</QueryText>
 				<MainTable>Catalog.Процессы</MainTable>
@@ -341,34 +340,6 @@
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance/>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>Список</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemGroup">
-						<dcsset:groupType>AndGroup</dcsset:groupType>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Список.ЭлементПроцесса</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЭлементыПроцесса.ПользовательскаяИстория</dcsset:right>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Список.ПользовательскаяИстория</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ПользовательскиеИстории.ПустаяСсылка</dcsset:right>
-						</dcsset:item>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>

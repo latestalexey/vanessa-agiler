@@ -6,13 +6,14 @@
 	<ChildItems>
 		<InputField name="Определение" id="84">
 			<DataPath>Объект.Определение</DataPath>
-			<TitleLocation>None</TitleLocation>
+			<TitleLocation>Top</TitleLocation>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<AutoMaxHeight>false</AutoMaxHeight>
+			<MultiLine>true</MultiLine>
 			<InputHint>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>например: "Бухгалтер", "Маркетолог", "Оператор" и т.д.</v8:content>
+					<v8:content>например: "бухгалтер", "маркетолог", "оператор" и т.д.</v8:content>
 				</v8:item>
 			</InputHint>
 			<ContextMenu name="ОпределениеКонтекстноеМеню" id="85"/>
