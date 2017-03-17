@@ -278,8 +278,8 @@
 			<Metadata name="InformationRegister.ПользовательскиеИстории.Dimension.Функциональность" id="2e6aa794-1573-49d1-8731-68dec1a6074c"/>
 			<Metadata name="InformationRegister.ПользовательскиеИстории.Dimension.КлючевоеДействиеПерсоны" id="a41f4df4-6304-455d-9a8d-2553014242bf"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаЗаписи" id="3be96383-483b-4bce-8132-6a00b24f3166" configVersion="fbced93509fcdc47a8a2a4febdae5c9300000000"/>
-		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаЗаписи.Form" id="3be96383-483b-4bce-8132-6a00b24f3166.0" configVersion="9ba3359bb86d4f4dad945821958bbcf000000000"/>
+		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаЗаписи" id="3be96383-483b-4bce-8132-6a00b24f3166" configVersion="139420bad6452948a0bce75da53529b500000000"/>
+		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаЗаписи.Form" id="3be96383-483b-4bce-8132-6a00b24f3166.0" configVersion="e4798108094ec3498e68d2250043dfcc00000000"/>
 		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаСписка" id="927871e2-62a2-4a48-9670-033dcc5ccced" configVersion="2812b407f814074a9a8ae6fd25a6ab3500000000"/>
 		<Metadata name="InformationRegister.ПользовательскиеИстории.Form.ФормаСписка.Form" id="927871e2-62a2-4a48-9670-033dcc5ccced.0" configVersion="ff24aa3cd8734e459bc88098273b9dd500000000"/>
 		<Metadata name="InformationRegister.ХранилищеИдентификаторов" id="eb744ae3-68be-4978-b5d1-0901ff90abff" configVersion="13202e05bfcb5d4b8e177b82efbf20f800000000">
