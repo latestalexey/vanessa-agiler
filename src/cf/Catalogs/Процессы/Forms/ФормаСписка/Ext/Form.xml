@@ -188,7 +188,6 @@
 				<Field>Список.Ref</Field>
 				<Field>Список.Parent</Field>
 				<Field>Список.Code</Field>
-				<Field>1/15</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
