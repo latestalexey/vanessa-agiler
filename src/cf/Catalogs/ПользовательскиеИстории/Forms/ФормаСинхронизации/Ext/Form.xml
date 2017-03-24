@@ -302,7 +302,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.БизнесЦели</v8:Type>
+				<v8:Type>cfg:CatalogRef.БизнесЦенности</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

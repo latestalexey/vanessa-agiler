@@ -1473,7 +1473,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.БизнесЦели</name>
+		<name>Catalog.БизнесЦенности</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

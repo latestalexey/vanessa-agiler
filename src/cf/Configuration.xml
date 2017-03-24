@@ -149,7 +149,7 @@
 			<CommonModule>ПомощникВызоваСервисов</CommonModule>
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>ФормаПоиска</CommonForm>
-			<Catalog>БизнесЦели</Catalog>
+			<Catalog>БизнесЦенности</Catalog>
 			<Catalog>КлючевыеДействия</Catalog>
 			<Catalog>Контакты</Catalog>
 			<Catalog>Метрики</Catalog>
