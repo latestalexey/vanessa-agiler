@@ -8,7 +8,6 @@
 	</Title>
 	<AutoTitle>false</AutoTitle>
 	<CommandSet>
-		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>Create</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -80,10 +79,10 @@
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
-			<Button name="ФормаСкрытьРодителей" id="26">
+			<Button name="ФормаПоказатьСхему" id="49">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СкрытьРодителей</CommandName>
-				<ExtendedTooltip name="ФормаСкрытьРодителейРасширеннаяПодсказка" id="27"/>
+				<CommandName>Form.Command.ПоказатьСхему</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьСхемуРасширеннаяПодсказка" id="50"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -358,21 +357,6 @@
 			</ToolTip>
 			<Action>Создать_Старт</Action>
 		</Command>
-		<Command name="СкрытьРодителей" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Скрыть родителей</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Скрыть родителей</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>СкрытьРодителей</Action>
-		</Command>
 		<Command name="Создать_Завершение" id="3">
 			<Title>
 				<v8:item>
@@ -502,6 +486,21 @@
 			</Picture>
 			<Action>ПереместитьВниз</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПоказатьСхему" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Схема</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать схему</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСхему</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

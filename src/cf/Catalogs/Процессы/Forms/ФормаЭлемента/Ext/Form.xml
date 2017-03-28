@@ -54,7 +54,7 @@
 			<ExtendedTooltip name="Слой_СтартРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<InputField name="Описание2" id="45">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -88,7 +88,7 @@
 			<ExtendedTooltip name="Слой_ЗавершениеРасширеннаяПодсказка" id="4"/>
 			<ChildItems>
 				<InputField name="Комментарий" id="18">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -166,7 +166,7 @@
 					<ExtendedTooltip name="ПерсонаРасширеннаяПодсказка" id="103"/>
 				</InputField>
 				<InputField name="Описание" id="78">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<TitleLocation>Top</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
@@ -194,7 +194,7 @@
 			<ExtendedTooltip name="Слой_ВариантУсловияРасширеннаяПодсказка" id="10"/>
 			<ChildItems>
 				<InputField name="Описание1" id="30">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -237,7 +237,7 @@
 					<ExtendedTooltip name="ВложенныйПроцессРасширеннаяПодсказка" id="65"/>
 				</InputField>
 				<InputField name="Описание3" id="51">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -271,7 +271,7 @@
 			<ExtendedTooltip name="Слой_КомментарийРасширеннаяПодсказка" id="14"/>
 			<ChildItems>
 				<InputField name="Описание4" id="36">
-					<DataPath>Объект.Описание</DataPath>
+					<DataPath>Объект.ВместоОписанияКлючевоеДействие</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

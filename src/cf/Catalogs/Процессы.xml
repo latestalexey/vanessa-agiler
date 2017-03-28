@@ -486,11 +486,11 @@
 			</Attribute>
 			<Attribute uuid="cee78bef-2099-4844-9cf7-92cf358a8e34">
 				<Properties>
-					<Name>Описание</Name>
+					<Name>ВместоОписанияКлючевоеДействие</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Описание</v8:content>
+							<v8:content>Вместо описания ключевое действие</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
